@@ -1,0 +1,48 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nina Carducci",
+    "description": "Photographer",
+    "image": [
+      "https://paskri.github.io/Paskri-ninacarducci.github.io/assets/images/nina-560px.webP",
+      "https://paskri.github.io/Paskri-ninacarducci.github.io/assets/images/camera-419px.webP",
+      "https://paskri.github.io/Paskri-ninacarducci.github.io/assets/images/austin-neill-hgO1wFPXl3I-unsplash-424px.webP",
+      "https://paskri.github.io/Paskri-ninacarducci.github.io/assets/images/ali-morshedlou-WMD64tMfc4k-unsplash-424px.webP",
+      "https://paskri.github.io/Paskri-ninacarducci.github.io/assets/images/jakob-owens-SiniLJkXhMc-unsplash-424px.webP",
+      "https://paskri.github.io/Paskri-ninacarducci.github.io/assets/images/ade-tunji-rVkhWWZFAtQ-unsplash-424px.webP"
+     ],
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "68 avenue Alsace-Lorraine",
+        "addressLocality": "Bordeaux",
+        "postalCode": "33200",
+        "addressCountry": {
+          "@type": "Country",
+          "name": "France"
+        }
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.84672,
+      "longitude": -0.60653
+    },
+    "url": "https://paskri.github.io/Paskri-ninacarducci.github.io/",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+33 05 56 67 78 89"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "10:00",
+        "closes": "19:00"
+      }
+    ] 
+}
