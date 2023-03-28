@@ -201,7 +201,9 @@ h3 {
   width: 20%;
 }
 .carousel-item img {
-  object-fit: cover;
+  aspect-ratio: 1920/888;
+  display: block;
+  /*object-fit: cover;*/
   width: 100%;
   height: 100%;
 }
@@ -305,12 +307,14 @@ h3 {
   width: 50%;
 }
 .picture.left picture {
-  width: 30%;
+  /*width: 30%;*/
 }
 .picture.left picture img,
 .picture.right picture img {
+  display: block;
+  aspect-ratio: 1/1;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   max-width: 560px;
   max-height: 560px;
 }
