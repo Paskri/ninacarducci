@@ -1,0 +1,282 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    max-width: 1920px;
+    margin: auto;
+    color: rgb(33, 37, 41);
+    text-align: left;
+    line-height: 1.5rem;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  img {
+    vertical-align: middle;
+  }
+  ::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
+  button:not(:disabled),
+  [type="button"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  [type="submit"]:not(:disabled) {
+    cursor: pointer;
+  }
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+  button {
+    border-radius: 0;
+  }
+  input,
+  button,
+  select,
+  optgroup,
+  textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  form input {
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px;
+    height: 2.5em;
+    margin-bottom: 20px;
+  }
+  form textarea {
+    width: 100%;
+    background-color: transparent;
+    border: solid 1px;
+    height: 5em;
+    line-height: 2.5em;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  input[type="submit"] {
+    background-color: #beb45a;
+    padding: 0.5em 1em;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-inline-start: 0;
+  }
+  nav ul li {
+    padding-inline: 10px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  ol,
+  ul,
+  dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  ol,
+  ul {
+    padding-left: 2rem;
+  }
+  h6,
+  .h6,
+  h5,
+  .h5,
+  h4,
+  .h4,
+  h3,
+  .h3,
+  h2,
+  .h2,
+  h1,
+  .h1,
+  .service__price span {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  #about {
+    display: flex;
+    background-color: #f6d2b8;
+    padding: 10%;
+    position: relative;
+  }
+  .picture.left::before {
+    content: " ";
+    background-color: #e5975f;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: 0;
+  }
+  .picture {
+    /*flex: 2;*/
+    margin: 0 20px;
+    z-index: 0;
+    width: 50%;
+  }
+  .picture.left picture {
+    width: 30%;
+  }
+  .picture.left picture img,
+  .picture.right picture img {
+    width: 100%;
+    height: 100%;
+    max-width: 560px;
+    max-height: 560px;
+  }
+  .picture img {
+    width: 100%;
+    object-fit: scale-down;
+  }
+  .title,
+  .service__price span {
+    text-align: center;
+    padding-block: 2em;
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  #about-me {
+    flex: 2;
+    text-align: left;
+  }
+  #about,
+  #contact .container {
+    align-items: center;
+  }
+  #about {
+    flex-direction: column;
+    line-height: 1.3rem;
+  }
+  .about-me__title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 30px;
+    text-align: center;
+  }
+  .about-me__introduction {
+    font-family: "Spectral";
+    font-weight: 800;
+    font-style: italic;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 1rem;
+  }
+  .about-me__text {
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  
+  @media screen and (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media screen and (min-width: 651px) {
+    .picture.left::before,
+    .picture.right::before {
+      height: 30% ;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .picture {
+      width: 36%;
+    }
+    .picture.left::before {
+      width: 374px;
+      bottom: 0;
+      left: 0;
+      top: auto;
+    }
+    #about {
+      flex-direction: row;
+      line-height: 1.3rem;
+    }
+    .about-me__title {
+      text-align: left;
+      margin-top: 0;
+    }
+    #contact .container {
+      align-items: left;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+    .title,
+    h3,
+    .h3,
+    .service__price span {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+  

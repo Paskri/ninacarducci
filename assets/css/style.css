@@ -284,7 +284,7 @@ h3 {
 #about {
   display: flex;
   background-color: #f6d2b8;
-  padding: 2em;
+  padding: 10%;
   position: relative;
 }
 .picture.left::before {
@@ -299,10 +299,10 @@ h3 {
   left: 0;
 }
 .picture {
-  flex: 2;
+  /*flex: 2;*/
   margin: 0 20px;
   z-index: 0;
-  width: 80%;
+  width: 50%;
 }
 .picture.left picture {
   width: 30%;
@@ -334,9 +334,10 @@ h3 {
 }
 #about {
   flex-direction: column;
+  line-height: 1.3rem;
 }
 .about-me__title {
-  margin-top: 0;
+  margin-top: 1em;
   margin-bottom: 1em;
   font-size: 30px;
   text-align: center;
@@ -674,8 +675,9 @@ label {
   }
   #about,
   #contact {
-    padding-block: 100px;
+    /*padding-block: 100px;
     padding-inline: 100px;
+    padding: 100px;*/
   }
   .service {
     width: 100%;
@@ -718,6 +720,9 @@ label {
 }
 
 @media screen and (min-width: 1000px) {
+  .picture {
+    width: 36%;
+  }
   .picture.left::before {
     width: 374px;
     bottom: 0;
@@ -755,31 +760,32 @@ label {
   #contact .container {
     flex-direction: row;
   }
-  .picture {
+  /*.picture {
     width: auto;
-  }
+  }*/
   #about {
     flex-direction: row;
+    line-height: 1.3rem;
+  }
+  .about-me__title {
+    text-align: left;
+    margin-top: 0;
+  }
+  
+  /*.about-me__introduction {
+    width: 60%;
+  }
+  .about-me__text {
+    width: 80%;
+  }*/
+  #contact .container {
+    align-items: left;
   }
 }
 
 @media screen and (min-width: 1181px) {
   .picture {
-    flex: 1;
-  }
-  .about-me__introduction {
-    width: 60%;
-  }
-  .about-me__text {
-    width: 80%;
-  }
-  .about-me__title {
-    margin-top: 1em;
-    margin-bottom: 60px;
-  }
-  #about,
-  #contact .container {
-    align-items: left;
+    /*flex: 1;*/
   }
 }
 
