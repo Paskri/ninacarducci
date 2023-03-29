@@ -203,7 +203,6 @@ h3 {
 .carousel-item img {
   aspect-ratio: 1920/888;
   display: block;
-  /*object-fit: cover;*/
   width: 100%;
   height: 100%;
 }
@@ -301,20 +300,15 @@ h3 {
   left: 0;
 }
 .picture {
-  /*flex: 2;*/
   margin: 0 20px;
   z-index: 0;
   width: 50%;
-}
-.picture.left picture {
-  /*width: 30%;*/
 }
 .picture.left picture img,
 .picture.right picture img {
   display: block;
   aspect-ratio: 1/1;
   width: 100%;
-  /*height: 100%;*/
   max-width: 560px;
   max-height: 560px;
 }
@@ -677,12 +671,6 @@ label {
   form {
     width: 70%;
   }
-  #about,
-  #contact {
-    /*padding-block: 100px;
-    padding-inline: 100px;
-    padding: 100px;*/
-  }
   .service {
     width: 100%;
     max-width: 100%;
@@ -764,9 +752,6 @@ label {
   #contact .container {
     flex-direction: row;
   }
-  /*.picture {
-    width: auto;
-  }*/
   #about {
     flex-direction: row;
     line-height: 1.3rem;
@@ -775,13 +760,6 @@ label {
     text-align: left;
     margin-top: 0;
   }
-  
-  /*.about-me__introduction {
-    width: 60%;
-  }
-  .about-me__text {
-    width: 80%;
-  }*/
   #contact .container {
     align-items: left;
   }
@@ -789,7 +767,6 @@ label {
 
 @media screen and (min-width: 1181px) {
   .picture {
-    /*flex: 1;*/
   }
 }
 
