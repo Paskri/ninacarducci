@@ -78,15 +78,12 @@ function displayPictures(elements) {
     gallery.classList.add('hide');
     setTimeout(() => {
         for (let element of elements) {
-            console.log(element);
             let newImg = `<img class="gallery-img" data-tag="${element.tag}" src="${element.thumbSrc}" alt="${element.alt}" index="${element.index}">`;
             gallery.innerHTML += newImg;
-            console.log(newImg);
         }
         gallery.classList.remove('hide');
         gallery.classList.add('slide');
         let newImgs = gallery.querySelectorAll('img');
-        console.log(newImgs);
         newImgs.forEach(img => {
             img.addEventListener('click', e => {
                 e.preventDefault();
@@ -170,7 +167,6 @@ function closeModal() {
 function updateModalDisplay(index) {
     let modalContent = document.querySelector('.modal-content');
     let img = modalContent.querySelector('img');
-    console.log(modalPictures[index]);
     img.setAttribute('src', modalPictures[index][0]);
     img.setAttribute('alt', modalPictures[index][1]);
 }
